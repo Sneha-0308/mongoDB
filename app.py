@@ -5,8 +5,7 @@ import pymongo
 
 app = FastAPI()
 
-myclient = pymongo.MongoClient(
-    "mongodb+srv://ruby:Sneha%4008@test.1p5iv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+myclient = pymongo.MongoClient("mongodb+srv://ruby:Sneha%4008@test.1p5iv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 mydb = myclient["mydatabase"]
 mycol = mydb["user"]
 
